@@ -1,0 +1,41 @@
+<?php
+
+echo "Sistema de Indice de Massa Corporal\n".PHP_EOL;
+$altura = readline ("Digite sua altura: \n"); 
+$peso = readline ("Digite seu peso: \n");
+
+$alt_valor = $altura * $altura;
+$mediaimc = $peso/$alt_valor;
+
+    if ($mediaimc<18.5)
+    {
+    echo "A média é : ". $mediaimc .PHP_EOL;
+    echo "Abaixo do peso." .PHP_EOL;
+    }
+    else if (($mediaimc>18.5)&&($mediaimc<24.9))
+    {
+    echo "A média é : ". $mediaimc .PHP_EOL;
+    echo "Peso normal. \n". PHP_EOL;
+    }
+    else if (($mediaimc>25)&&($mediaimc<29.9))
+    {
+    echo "A média é : ". $mediaimc .PHP_EOL;
+    echo "Sobrepeso. \n". PHP_EOL;  
+    }
+    else if (($mediaimc>30)&&($mediaimc<34.9))
+    {
+    echo "A média é : ". $mediaimc .PHP_EOL;
+    echo "Obesidade grau 1. \n". PHP_EOL;  
+    }
+    else if (($mediaimc>35)&&($mediaimc<39.9))
+    {
+    echo "A média é : ". $mediaimc .PHP_EOL;
+    echo "Obesidade grau 2. \n". PHP_EOL;  
+    }
+    else if ($mediaimc>40)
+    {
+    echo "A média é : ". $mediaimc .PHP_EOL;
+    echo "Obesidade grau 3. \n". PHP_EOL;
+    }
+
+?>
